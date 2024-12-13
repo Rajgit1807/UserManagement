@@ -62,7 +62,7 @@ const UserRegionDistribution: React.FC<{ users: UserData[] }> = ({ users }) => {
   };
 
   return (
-    <div className="w-full bg-white rounded-2xl max-sm:mt-5 mt-10 pt-5 overflow-x-auto max-sm:h-[450px] h-[480px]">
+    <div className="w-full bg-white rounded-2xl max-sm:mt-5 mt-10 pt-6 overflow-x-auto h-[490px]">
 
         {!(users.length==0)? <> <h2 className="max-sm:text-[19px] text-xl font-bold max-sm:mb-2 mb-4 text-center max-sm:ps-5">User Distribution by Country and State</h2>
        <div className="min-w-[1000px]"> 
