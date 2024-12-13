@@ -33,7 +33,7 @@ const Sidebar = () => {
   return (
     <div
       className={`${
-        isMobile ? " relative flex justify-between items-center py-5 px-6" : "py-6"
+        isMobile ? " relative flex justify-between items-center max-sm:px-3 max-sm:py-3 py-5 px-6" : "py-6"
       } h-[calc(100vh-55px)] max-h-[760px] sidebar rounded-2xl bg-white px-3`}
     >
       <div
@@ -42,11 +42,11 @@ const Sidebar = () => {
         } justify-center`}
       >
         <DashboardIcon size="25px" />
-        <p className="text-[18px] font-medium">DashBoard</p>
+        <p className="lg:text-[18px] font-medium">DashBoard</p>
       </div>
       <div className={`${isMobile ? "" : "w-full mt-8 py-2 flex flex-col gap-2"}`}>
         {isMobile ? (
-          <div className="flex items-center gap-4">
+          <div className="flex items-center max-sm:gap-2 gap-4">
             <ViewsDD selectedIndex={selectedIndex} setSelIndex={setSelIndex}/> 
                    
             <MinimalFilter/>

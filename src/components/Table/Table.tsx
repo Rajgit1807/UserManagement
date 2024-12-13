@@ -134,14 +134,15 @@ const UserManagementTable:React.FC<{ userlist: UserData[] }> = ({ userlist }) =>
             },
             '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
               borderColor: 'primary.main',
-            }
+            },
+           
           }
         }}
         sx={{
           maxWidth: 600,
           '& .MuiInputBase-root': {
             borderRadius: '40px',
-          }
+          },
         }}
       />
       </Box>

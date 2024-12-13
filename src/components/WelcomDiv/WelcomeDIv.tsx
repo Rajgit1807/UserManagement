@@ -17,9 +17,9 @@ const WelcomeDiv: React.FC<WelcomeDivProps> = ({
 }) => {
   return (
     <div className="flex gap-9 items-center">
-      <div className="rounded-2xl px-8 py-7 w-full xl:w-1/2 bg-gradient-to-br from-black to-[#686767] via-[#222121] shadow-lg">
-        <p className="text-white font-semibold text-[30px]">{heading}</p>
-        <div className="w-full bg-[#4d4c4c] p-4 rounded-lg mt-2">
+      <div className="max-sm:px-6 max-sm:py-5 rounded-2xl px-8 py-7 w-full xl:w-1/2 bg-gradient-to-br from-black to-[#686767] via-[#222121] shadow-lg">
+        <p className="text-white font-semibold max-sm:text-[27px] text-[30px]">{heading}</p>
+        <div className="w-full bg-[#4d4c4c] max-sm:p-3 p-4 rounded-lg mt-2">
           {analytics ? (
             <>
             <div className="flex items-center gap-1">
@@ -37,8 +37,8 @@ const WelcomeDiv: React.FC<WelcomeDivProps> = ({
             </>
           ) : (
             <>
-              <p className="text-[#cfcccc] text-sm mb-2">{subhead}</p>
-              <p className="text-white text-[30px] font-bold">{totalUsers}</p>
+              <p className="text-[#cfcccc] text-sm max-sm:mb-1 mb-2">{subhead}</p>
+              <p className="text-white max-sm:text-[25px] text-[30px] font-bold">{totalUsers}</p>
             </>
           )}
         </div>

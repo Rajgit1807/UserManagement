@@ -58,7 +58,7 @@ export default function FilterDD({
   return (
     <>
       <button 
-          className='rounded-[8px] font-medium border border-[#dbe3cc] px-4 py-[6.8px] text-[15px] hover:bg-[#effada]'
+          className=' rounded-[8px] font-bold border border-[#dbe3cc] px-3 py-[6.8px] text-[14px] hover:bg-[#effada]'
         onClick={handleClick}
         aria-describedby={id}
       >

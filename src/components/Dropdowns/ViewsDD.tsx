@@ -23,7 +23,7 @@ export default function ViewsDD ({selectedIndex,setSelIndex} :ViewsProps) {
 
   return (
     <Dropdown>
-      <MenuButton>Views</MenuButton>
+      <MenuButton sx={{fontSize:"14px" ,padding:"7px 11px"}}>Views</MenuButton>
       <Menu slots={{ listbox: AnimatedListbox }}>
       {menuData.map((item, index) => (
         <MenuItem onClick={createHandleMenuClick(item.name)}>
