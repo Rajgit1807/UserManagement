@@ -49,7 +49,7 @@ const UserManagementTable:React.FC<{ userlist: UserData[] }> = ({ userlist }) =>
     (state: RootState) => state.user.userDetails
   );
 
-  const handleChangePage = (event: React.MouseEvent<HTMLButtonElement> | null, newPage: number) => {
+  const handleChangePage = (_event: React.MouseEvent<HTMLButtonElement> | null, newPage: number) => {
     setPage(newPage);
   };
 
