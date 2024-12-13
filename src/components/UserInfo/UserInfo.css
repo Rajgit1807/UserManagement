@@ -1,0 +1,8 @@
+@media only screen and (max-width: 1000px) {
+    .user-info {
+     height: auto;
+     overflow-y: visible;
+     padding-right: 0;
+    }
+  }
+  
