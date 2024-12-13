@@ -59,9 +59,9 @@ const processData = (data: User[]): ProcessedData[] => {
   const registrationData: ProcessedData[] = processData(users);
 
   return (
-    <div className={`w-full h-[400px] bg-white rounded-2xl pt-5`}>
+    <div className={`w-full max-sm:h-[380px] h-[400px] bg-white rounded-2xl pt-5`}>
         {users.length!=0? <>
-            <h2 className="text-xl font-bold mb-4 text-center">User Registration Trend</h2>
+            <h2 className="max-sm:text-[19px] text-xl font-bold max-sm:mb-2 mb-4 text-center">User Registration Trend</h2>
       <ResponsiveContainer width="100%" height="80%">
         <LineChart
           data={registrationData}
@@ -87,7 +87,7 @@ const processData = (data: User[]): ProcessedData[] => {
           />
         </LineChart>
       </ResponsiveContainer></>:<div className='flex items-center justify-center pb-5 w-full h-full'>
-        <p className='text-red-900 text-[18px]'>No Users Registered In Last <span className='text-blue-950'>6 months</span></p>
+        <p className='text-red-900 text-[18px] text-center'>No Users Registered In Last <span className='text-blue-950'>6 months</span></p>
         </div>}
       
     </div>

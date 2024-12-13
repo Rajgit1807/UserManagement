@@ -51,7 +51,7 @@ const Analytics = () => {
     <div className="w-full analytics h-[calc(100vh-55px)] overflow-y-scroll rounded-2xl md:max-h-[760px] pr-3">
         <WelcomeDiv analytics={true} heading="Welcome to User Analytics  🙋‍♂️" subhead="" totalUsers={users.length} activeUsers={getCount()} deletedUsers={userData.length-allusers.length}/>
         {!isMobile && <MinimalFilter/>  }
-        <div className='flex gap-10 mt-10 max-xl:flex-col'>
+        <div className='flex max-sm:gap-5 gap-10 max-sm:mt-5 mt-10 max-xl:flex-col'>
          <UserRegistrationTrend users={users}/>
          <UserActivityPieChart users={users}/>
         </div>

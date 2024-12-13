@@ -31,11 +31,11 @@ const UserActivityPieChart: React.FC<{ users: UserData[] }> = ({ users }) => {
   ];
 
   return (
-    <div className={`w-full h-[400px] bg-white relative rounded-2xl`}>
+    <div className={`w-full max-sm:h-[380px] h-[400px] bg-white relative rounded-2xl`}>
       {users.length != 0 ? (
         <>
           {" "}
-          <h2 className="text-center text-xl font-bold mb-4 mt-5">
+          <h2 className="max-sm:text-[19px] text-center text-xl font-bold max-sm:mb-3 mb-4 mt-5">
             User Activity Distribution
           </h2>
           <ResponsiveContainer width="100%" height="100%" className="pb-20">
@@ -66,7 +66,7 @@ const UserActivityPieChart: React.FC<{ users: UserData[] }> = ({ users }) => {
         </>
       ) : (
         <div className="flex items-center justify-center  w-full h-full">
-          <p className="text-red-900 text-[18px]">
+          <p className="text-red-900 text-[18px] text-center">
             No Data To Show{" "}
             <span className="text-blue-950">Active Vs Inactive User Chart</span>
           </p>

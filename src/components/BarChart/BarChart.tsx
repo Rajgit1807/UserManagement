@@ -62,9 +62,9 @@ const UserRegionDistribution: React.FC<{ users: UserData[] }> = ({ users }) => {
   };
 
   return (
-    <div className="w-full bg-white rounded-2xl mt-10 pt-5 overflow-x-auto h-[470px]">
+    <div className="w-full bg-white rounded-2xl max-sm:mt-5 mt-10 pt-5 overflow-x-auto max-sm:h-[450px] h-[480px]">
 
-        {!(users.length==0)? <> <h2 className="text-xl font-bold mb-4 text-center">User Distribution by Country and State</h2>
+        {!(users.length==0)? <> <h2 className="max-sm:text-[19px] text-xl font-bold max-sm:mb-2 mb-4 text-center">User Distribution by Country and State</h2>
        <div className="min-w-[1000px]"> 
          <ResponsiveContainer width="100%" height={400}>
            <BarChart
@@ -101,8 +101,8 @@ const UserRegionDistribution: React.FC<{ users: UserData[] }> = ({ users }) => {
              ))}
            </BarChart>
          </ResponsiveContainer>
-       </div></> : <div className='flex items-center justify-center w-full h-full pb-5'>
-        <p className='text-red-900 text-[18px]'>No Data To Show <span className='text-blue-950'>User Distribution</span></p>
+       </div></> : <div className='flex items-center justify-center w-full h-full pb-5 text-center'>
+        <p className='text-red-900 text-[18px] text-center'>No Data To Show <span className='text-blue-950'>User Distribution</span></p>
         </div>}
       
      </div>

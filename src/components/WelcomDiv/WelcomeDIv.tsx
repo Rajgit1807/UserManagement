@@ -23,16 +23,16 @@ const WelcomeDiv: React.FC<WelcomeDivProps> = ({
           {analytics ? (
             <>
             <div className="flex items-center gap-1">
-            <p className="text-[#cfcccc] text-[18px] ">Total Users: </p>
-            <p className="text-white font-semibold text-[18px]">{totalUsers}</p>
+            <p className="text-[#cfcccc] max-sm:text-[15px] text-[18px] ">Total Users: </p>
+            <p className="text-white font-semibold max-sm:text-[16px] text-[18px]">{totalUsers}</p>
             </div>
             <div className="flex items-center gap-1">
-            <p className="text-[#cfcccc] text-[18px] ">Active Users: </p>
-            <p className="text-white font-semibold text-[18px]">{activeUsers}</p>
+            <p className="text-[#cfcccc] max-sm:text-[15px] text-[18px] ">Active Users: </p>
+            <p className="text-white font-semibold max-sm:text-[16px] text-[18px]">{activeUsers}</p>
             </div>
             <div className="flex items-center gap-1">
-            <p className="text-[#cfcccc] text-[18px] ">Deleted Users: </p>
-            <p className="text-white font-semibold text-[18px]">{deletedUsers}</p>
+            <p className="text-[#cfcccc] max-sm:text-[15px] text-[18px] ">Deleted Users: </p>
+            <p className="text-white font-semibold max-sm:text-[16px] text-[18px]">{deletedUsers}</p>
             </div>
             </>
           ) : (
