@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <div className="flex w-full items-center justify-center">
-      <div className="rounded-3xl xl:max-w-[1600px] w-full h-[calc(100vh-50px)] flex items-center justify-center">
+      <div className="rounded-3xl xl:max-w-[1600px] w-full h-[calc(100vh-30px)] flex items-center justify-center">
         {loading ? (
           <div className="flex justify-center items-center h-full">
             <Rings
@@ -80,19 +80,19 @@ const Login = () => {
           </div>
         ) : (
           <motion.form
-            className="bg-white rounded-3xl shadow-lg w-[350px] p-9"
+            className="bg-white rounded-3xl shadow-lg w-[290px] sm:w-[350px] p-6 sm:p-9"
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.9 }}
             onSubmit={handleSubmit}
           >
-            <div className="flex gap-1 items-center mb-6">
+            <div className="flex gap-1 items-center mb-4 sm:mb-6">
               <DashboardIcon size="18px" />
               <p className="font-medium text-[12px] text-gray-600">Dashboard</p>
             </div>
-            <p className="text-[#5dcece] font-bold text-[35px] mb-6">Login</p>
+            <p className="text-[#5dcece] font-bold text-[30px] sm:text-[35px] mb-4 sm:mb-6">Login</p>
 
-            <label className="flex flex-col text-[14px] mb-4">
+            <label className="flex flex-col text-[14px] mb-2 sm:mb-4">
               <span className="mb-1 font-medium text-gray-700">Email:</span>
               <input
                 type="email"
@@ -102,7 +102,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </label>
-            <label className="flex flex-col text-[14px] mb-4">
+            <label className="flex flex-col text-[14px] mb-2 sm:mb-4">
               <span className="mb-1 font-medium text-gray-700">Password:</span>
               <div className="relative">
                 <input
@@ -122,13 +122,13 @@ const Login = () => {
             </label>
             <button
               type="submit"
-              className="mt-12 w-full bg-[#5dcece] text-white font-semibold py-2 rounded-lg hover:bg-[#4cb4b4] transition duration-200"
+              className="mt-12 w-full bg-[#5dcece] text-white font-semibold py-2 rounded-lg hover:bg-[#4cb4b4] transition duration-200 max-sm:text-[14px] "
             >
               Login
             </button>
             {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
             {success && (
-              <p className="text-green-500 text-sm mb-4">{success}</p>
+              <p className="text-green-500 text-sm mb-2 mt-2">{success}</p>
             )}
           </motion.form>
         )}
